@@ -8,7 +8,20 @@
 </head>
 <body>
   
-  <button onclick="inflate()">Inflate <span id="click-count"></span></button>
+  <div>
+    <button id="start-button" onclick="startGame()">START GAME</button>
+  </div>
+
+  <button id="inflate-button" disabled="true" onclick="inflate()">
+    Inflate
+    <span id="click-count"></span>
+  </button>
+
+  <div>
+    <span> Balloons Popped </span>
+    <span id="pop-count">0</span>
+  </div>
+
   <div id="balloon" class="balloon"></div>
 <script src="main.js"></script>
 </body>
